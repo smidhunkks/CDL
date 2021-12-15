@@ -547,8 +547,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "./lexanalyser/lexanalyzer.l"
-#line 2 "./lexanalyser/lexanalyzer.l"
+#line 1 "lexanalyzer.l"
+#line 2 "lexanalyzer.l"
  //Implementation of Lexical Analyzer using Lex tool
 int COMMENT=0;
 #line 555 "lex.yy.c"
@@ -769,7 +769,7 @@ YY_DECL
 		}
 
 	{
-#line 6 "./lexanalyser/lexanalyzer.l"
+#line 6 "lexanalyzer.l"
 
 #line 775 "lex.yy.c"
 
@@ -830,132 +830,132 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 7 "./lexanalyser/lexanalyzer.l"
+#line 7 "lexanalyzer.l"
 {printf("\n%s is a preprocessor directive",yytext);}
 	YY_BREAK
 case 2:
-#line 9 "./lexanalyser/lexanalyzer.l"
+#line 9 "lexanalyzer.l"
 case 3:
-#line 10 "./lexanalyser/lexanalyzer.l"
+#line 10 "lexanalyzer.l"
 case 4:
-#line 11 "./lexanalyser/lexanalyzer.l"
+#line 11 "lexanalyzer.l"
 case 5:
-#line 12 "./lexanalyser/lexanalyzer.l"
+#line 12 "lexanalyzer.l"
 case 6:
-#line 13 "./lexanalyser/lexanalyzer.l"
+#line 13 "lexanalyzer.l"
 case 7:
-#line 14 "./lexanalyser/lexanalyzer.l"
+#line 14 "lexanalyzer.l"
 case 8:
-#line 15 "./lexanalyser/lexanalyzer.l"
+#line 15 "lexanalyzer.l"
 case 9:
-#line 16 "./lexanalyser/lexanalyzer.l"
+#line 16 "lexanalyzer.l"
 case 10:
-#line 17 "./lexanalyser/lexanalyzer.l"
+#line 17 "lexanalyzer.l"
 case 11:
-#line 18 "./lexanalyser/lexanalyzer.l"
+#line 18 "lexanalyzer.l"
 case 12:
-#line 19 "./lexanalyser/lexanalyzer.l"
+#line 19 "lexanalyzer.l"
 case 13:
-#line 20 "./lexanalyser/lexanalyzer.l"
+#line 20 "lexanalyzer.l"
 case 14:
-#line 21 "./lexanalyser/lexanalyzer.l"
+#line 21 "lexanalyzer.l"
 case 15:
-#line 22 "./lexanalyser/lexanalyzer.l"
+#line 22 "lexanalyzer.l"
 case 16:
-#line 23 "./lexanalyser/lexanalyzer.l"
+#line 23 "lexanalyzer.l"
 case 17:
-#line 24 "./lexanalyser/lexanalyzer.l"
+#line 24 "lexanalyzer.l"
 case 18:
 YY_RULE_SETUP
-#line 24 "./lexanalyser/lexanalyzer.l"
+#line 24 "lexanalyzer.l"
 {printf(" kwd");}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 25 "./lexanalyser/lexanalyzer.l"
+#line 25 "lexanalyzer.l"
 {COMMENT=1;}{printf("comment");}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 26 "./lexanalyser/lexanalyzer.l"
+#line 26 "lexanalyzer.l"
 {if(!COMMENT)printf(" op-plus");}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 27 "./lexanalyser/lexanalyzer.l"
+#line 27 "lexanalyzer.l"
 {if(!COMMENT)printf(" op-sub");}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 28 "./lexanalyser/lexanalyzer.l"
+#line 28 "lexanalyzer.l"
 {if(!COMMENT)printf(" op-mul");}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 29 "./lexanalyser/lexanalyzer.l"
+#line 29 "lexanalyzer.l"
 {if(!COMMENT)printf(" op-div");}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 30 "./lexanalyser/lexanalyzer.l"
+#line 30 "lexanalyzer.l"
 {if(!COMMENT)printf("fun");}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 31 "./lexanalyser/lexanalyzer.l"
+#line 31 "lexanalyzer.l"
 {if(!COMMENT)printf("block begins");}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 32 "./lexanalyser/lexanalyzer.l"
+#line 32 "lexanalyzer.l"
 {if(!COMMENT)printf("block ends");}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 33 "./lexanalyser/lexanalyzer.l"
+#line 33 "lexanalyzer.l"
 {if(!COMMENT) printf(" id");}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 35 "./lexanalyser/lexanalyzer.l"
+#line 35 "lexanalyzer.l"
 {if(!COMMENT)printf("str");}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 36 "./lexanalyser/lexanalyzer.l"
+#line 36 "lexanalyzer.l"
 {if(!COMMENT) printf("num");}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 37 "./lexanalyser/lexanalyzer.l"
+#line 37 "lexanalyzer.l"
 {if(!COMMENT)printf("\n\t");ECHO;printf("\n");}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 38 "./lexanalyser/lexanalyzer.l"
+#line 38 "lexanalyzer.l"
 ECHO;
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 39 "./lexanalyser/lexanalyzer.l"
+#line 39 "lexanalyzer.l"
 {if(!COMMENT)printf(" op-equ");}
 	YY_BREAK
 case 33:
-#line 41 "./lexanalyser/lexanalyzer.l"
+#line 41 "lexanalyzer.l"
 case 34:
-#line 42 "./lexanalyser/lexanalyzer.l"
+#line 42 "lexanalyzer.l"
 case 35:
-#line 43 "./lexanalyser/lexanalyzer.l"
+#line 43 "lexanalyzer.l"
 case 36:
-#line 44 "./lexanalyser/lexanalyzer.l"
+#line 44 "lexanalyzer.l"
 case 37:
 YY_RULE_SETUP
-#line 44 "./lexanalyser/lexanalyzer.l"
+#line 44 "lexanalyzer.l"
 {if(!COMMENT) printf("rel-op");}
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 46 "./lexanalyser/lexanalyzer.l"
+#line 46 "lexanalyzer.l"
 ECHO;
 	YY_BREAK
 #line 962 "lex.yy.c"
@@ -1963,7 +1963,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 46 "./lexanalyser/lexanalyzer.l"
+#line 46 "lexanalyzer.l"
 
 
 
